@@ -13,10 +13,10 @@ public class SpaceShip extends Sprite {
     public SpaceShip(int x, int y) {
         super(x, y);
         
-        initSpaceShip();
+        initCraft();
     }
 
-    private void initSpaceShip() {
+    private void initCraft() {
 
         missiles = new ArrayList<>();
         
@@ -27,6 +27,14 @@ public class SpaceShip extends Sprite {
     public void move() {
         x += dx;
         y += dy;
+        
+        if (x < 1) {
+            x = 1;
+        }
+        if (y < 1) {
+            y = 1;
+        }
+
     }
 
     public List<Missile> getMissiles() {
