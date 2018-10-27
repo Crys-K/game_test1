@@ -1,7 +1,8 @@
 package game_test1;
-//MIO VA
+
 import java.awt.Image;
 import javax.swing.ImageIcon;
+import java.awt.Rectangle;
 
 public class Sprite {
 
@@ -49,5 +50,9 @@ public class Sprite {
 
     public void setVisible(Boolean visible) {
         this.visible = visible;
+    }
+    
+    public Rectangle getBounds() {
+        return new Rectangle(x, y, width, height);
     }
 }

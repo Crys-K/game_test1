@@ -13,7 +13,7 @@ public class Missile extends Sprite {
     
     private void initMissile() {
         
-        loadImage("C:\\Users\\Mario Mupo\\Documents\\NetBeansProjects\\Game_test1\\src\\game_test1\\images\\missile.png");  
+        loadImage("src\\game_test1\\images\\missile.png");  
         getImageDimensions();
     }
 
